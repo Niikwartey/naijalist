@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
   res.render("landing");
 })
 
-app.get("/listing", (req, res) => {
-  const campgrounds; // = jquery AJAX response
-  res.render("listing", {campgrounds});
+app.get("/listings", (req, res) => {
+  // const campgrounds; // = jquery AJAX response
+  res.render("listings", {});
 })
 
 // START SERVER
