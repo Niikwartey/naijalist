@@ -1,2 +1,2 @@
 # naijalist
-handyman directory
+Nigeria's biggest handyman directory
