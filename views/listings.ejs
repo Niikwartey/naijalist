@@ -1,3 +1,107 @@
 <% include partials/header %>
+<!-- <div  class="">
+<img class="ui fluid image" src="images/handyman_bg.jpg">
+</div> -->
+<div id="jumbo-search" class="ui center aligned padded segment">
+  <div class="jumbotron">
+    <h2>What are you looking for?</h2>
+    <div class="ui icon huge input">
+      <input type="text" placeholder="eg. TV Repair, Plumbing etc.">
+      <i class="inverted green circular search link icon"></i>
+    </div>
+  </div>
+</div>
 
+<div class="ui center aligned segment">
+  <div class="ui container">
+    <div class="ui grid">
+      <div id="listings" class="four column doubling row">
+        <!-- each item in listing -->
+        <div class="column">
+          <div class="ui centered card">
+            <div class="image">
+              <img src="http://www.coyotehandyman.com/images/coyote%20handyman%20header.jpg">
+            </div>
+            <div class="content">
+              <div class="header">
+                $149 for a Home Interior Mold and Water Damage Inspection and $149 Credit
+              </div>
+              <div class="meta">
+                Offered by: <a href="#">24/7 Property Cleaning & Restoration</a>
+              </div>
+              <!-- <div class="description">
+              </div> -->
+            </div>
+            <div class="extra content price">
+              <span class="original-price">
+                $1000
+              </span>
+              <span class="member-price">
+                $799
+              </span>
+            </div>
+
+            <a class="ui inverted orange bottom attached button" href="#">
+              View Offer
+            </a>
+          </div>
+        </div>
+        <!-- / -->
+      </div>
+    </div>
+  </div>
+</div>
 <% include partials/footer %>
+
+
+<style>
+  .ui.card .content .header {
+    margin-bottom: 5%;
+  }
+  .price span {
+    /*border: 1px solid yellow;*/
+    /*text-align: center;*/
+    /*float: left;*/
+    /*margin-left: 25%;*/
+  }
+  .price .original-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .price .member-price {
+    color: green;
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  #jumbo-search {
+    padding: 10vh 5vw;
+    background-image: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("images/handyman_bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  #jumbo-search .jumbotron {
+    color: green;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 5vh 5%;
+    border-radius: 3px;
+  }
+
+  #jumbo-search .jumbotron h2 {
+    font-size: 2em;
+    margin-bottom: 2vh;
+  }
+
+  #jumbo-search .jumbotron .input {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+</style>
